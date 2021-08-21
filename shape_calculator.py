@@ -35,12 +35,6 @@ class Rectangle:
     def get_amount_inside(self, obj):
         return (self.width // obj.width) * (self.height // obj.height)
 
-    # String representation of Object
-    def __str__(self):
-        return (("Rectangle(width={0}, height={1})").format(
-            self.width, self.height))
-
-
 class Square(Rectangle):
     def __init__(self, side):
         self.height = side
